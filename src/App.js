@@ -18,7 +18,7 @@ class App extends Component {
           <h2>Address Form</h2>
           <Form/>
           <hr/>
-          <List items={this.state.contacts}/>
+          <List {...this.state}/>
       </div>
     )
   }
