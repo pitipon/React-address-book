@@ -4,7 +4,10 @@ import { list } from 'postcss';
 
 class App extends Component {
   state = {
-    contacts: []
+    contacts: [
+      {name: 'Pitipon P', address: 'Thailand'},
+      {name: 'Pitipon P', address: 'Thailand'}
+    ]
   }
 
   render() {
@@ -21,6 +24,7 @@ class App extends Component {
                 <label htmlFor="address">Address</label>
                 <input type="text" className="form-control" id="address"/>
             </div>
+            <button type="submit" class="button-primary">Create</button>
           </form>
           <hr/>
           <ul>
