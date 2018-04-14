@@ -12,11 +12,17 @@ class App extends Component {
     ]
   }
 
+  createContact = (contact) => {
+    this.setState({
+      contacts: [...this.state.contacts, contact]
+    })
+  }
+
   render() {
     return (
       <div className="container">
           <h2>Address Form</h2>
-          <Form/>
+          <Form createContact={this.createContact}/>
           <hr/>
           <List {...this.state}/>
       </div>

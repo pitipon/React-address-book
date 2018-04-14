@@ -10,6 +10,13 @@ class Form extends Component {
     createContact = (e) => {
         e.preventDefault()
         console.log(123131321, this.state)
+
+        const {name,address} = this.state
+        
+        this.props.createContact({
+            name: name,
+            address: address
+        })
     }
 
     // changeName = (e) => {
