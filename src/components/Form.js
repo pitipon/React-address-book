@@ -12,11 +12,17 @@ class Form extends Component {
         console.log(123131321, this.state)
 
         const {name,address} = this.state
-        
+
         this.props.createContact({
             name: name,
             address: address
         })
+
+        this.clearForm()
+    }
+
+    clearForm = () => {
+        this.setState({name:'', address:''})
     }
 
     // changeName = (e) => {
