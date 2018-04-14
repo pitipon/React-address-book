@@ -22,7 +22,7 @@ class App extends Component {
     return (
       <div className="container">
           <h2>Address Form</h2>
-          <Form createContact={this.createContact}/>
+          <Form onSubmit={this.createContact}/>
           <hr/>
           <List {...this.state}/>
       </div>

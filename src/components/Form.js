@@ -7,13 +7,13 @@ class Form extends Component {
         address: ''
     }
 
-    createContact = (e) => {
+    handleSubmit = (e) => {
         e.preventDefault()
         console.log(123131321, this.state)
 
         const {name,address} = this.state
 
-        this.props.createContact({
+        this.props.onSubmit({
             name: name,
             address: address
         })
@@ -68,7 +68,7 @@ class Form extends Component {
                     </div>
                     <button type="submit" 
                             class="button-primary"
-                            onClick={this.createContact}>Create</button>
+                            onClick={this.handleSubmit}>Create</button>
                 </form>
             </div>
         )
