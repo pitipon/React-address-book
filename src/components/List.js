@@ -10,4 +10,8 @@ const List = (props) => (
     </ul>
 )
 
+List.defaultProps = {
+    contacts: []
+}
+
 export default List

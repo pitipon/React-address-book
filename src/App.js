@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import { list } from 'postcss';
 import Form from './components/Form'
 import List from './components/List'
 
