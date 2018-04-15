@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import Form from './components/Form'
-import List from './components/List'
+// import Form from './components/Form'
+// import List from './components/List'
+
+import { Form, List } from './components'
 
 class App extends Component {
   state = {
